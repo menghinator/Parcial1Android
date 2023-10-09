@@ -21,7 +21,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun getListadoRecetas(): MutableList<Receta>{
     return mutableListOf(
-        Receta(1,"Test",Pais.ARGENTINA, listOf("ingrediente1","ingrediente2"),Dificultad.PRINCIPIANTE,"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MCydoToJUHZmVoPRbZ2XfVH0dnqo9wqUfg&usqp=CAU")
+        Receta(1,
+            "Test",
+            Pais.ARGENTINA,
+            listOf("ingrediente1","ingrediente2"),
+            Dificultad.PRINCIPIANTE,
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7MCydoToJUHZmVoPRbZ2XfVH0dnqo9wqUfg&usqp=CAU")
     )
     }
 
