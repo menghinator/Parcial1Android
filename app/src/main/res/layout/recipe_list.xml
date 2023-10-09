@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_plato"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tv_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toEndOf="@+id/iv_plato"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_label_dificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Dificultad: "
+        app:layout_constraintStart_toStartOf="@+id/tv_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+
+    <TextView
+        android:id="@+id/tv_dificultad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:text="Facil/Media/Dificil"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_dificultad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre" />
+
+    <TextView
+        android:id="@+id/tv_label_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Origen:"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_dificultad"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_dificultad" />
+
+    <TextView
+        android:id="@+id/tv_pais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Pais de Origen"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_pais"
+        app:layout_constraintTop_toBottomOf="@+id/tv_dificultad" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_plato" />
+</androidx.constraintlayout.widget.ConstraintLayout>
