@@ -80,6 +80,18 @@ class MainActivity : AppCompatActivity() {
             listOf("Alitas de Pollo","Aceite","Polvo de Ajo","Sal","Salsa Picante","Miel","Manteca"),
             Dificultad.FACIL,
             "https://hips.hearstapps.com/hmg-prod/images/classic-buffalo-wings-horizontal-279-1547506155.jpg"),
+        Receta(9,
+            "Picanha",
+            Pais.BRASIL,
+            listOf("Picanha","Aceite","Cerveza","Sal","Pimienta"),
+            Dificultad.FACIL,
+            "https://www.cocina-brasilena.com/base/stock/Recipe/36-image/36-image_web.jpg.webp"),
+        Receta(10,
+            "Ceviche",
+            Pais.PERU,
+            listOf("Pimienta","Pescado a eleccion","Cebolla","Aji","Cilantro","Limon","Sal","Caldo de Pescado","Lechuga","Batata","Maiz"),
+            Dificultad.FACIL,
+            "https://cdn0.recetasgratis.net/es/posts/7/4/1/ceviche_peruano_18147_600.webp"),
     )
     }
 

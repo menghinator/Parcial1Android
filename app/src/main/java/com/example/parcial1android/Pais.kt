@@ -9,4 +9,6 @@ enum class Pais
     FRANCIA,
     INGLATERRA,
     EEUU,
+    BRASIL,
+    PERU
 }
