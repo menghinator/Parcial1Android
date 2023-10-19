@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
 class Adapter(val context: Context) : ListAdapter<Receta, Adapter.ViewHolder>(DiffCallBack) {
+
+    lateinit var onItemClickListener: (Receta) -> Unit
     inner class ViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
         private val nombre: TextView = view.findViewById(R.id.tv_nombre)
         private val dificultad: TextView = view.findViewById(R.id.tv_dificultad)
@@ -25,6 +27,10 @@ class Adapter(val context: Context) : ListAdapter<Receta, Adapter.ViewHolder>(Di
         pais.text = receta.pais.toString()
 
         Glide.with(context).load(receta.foto).into(imagen)
+
+        view.setOnClickListener {
+            onItemClickListener(receta)
+            }
         }
     }
 

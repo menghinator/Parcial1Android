@@ -1,7 +1,7 @@
 package com.example.parcial1android
 
 enum class Dificultad {
-    PRINCIPIANTE,
+    FACIL,
     INTERMEDIO,
     AVANZADO
 }

@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_nombre_receta" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tv_pais_origen"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
@@ -67,4 +67,25 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintStart_toStartOf="@+id/tv_label_dif"
         app:layout_constraintTop_toBottomOf="@+id/tv_label_origen" />
+
+    <TextView
+        android:id="@+id/tv_label_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingredientes: "
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_dif"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_dif" />
+
+    <TextView
+        android:id="@+id/tv_ingredientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="16dp"
+        android:text="Lista"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_ingredientes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_dif" />
 </androidx.constraintlayout.widget.ConstraintLayout>
